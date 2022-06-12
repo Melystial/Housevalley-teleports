@@ -1,0 +1,273 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Version = Instance.new("TextLabel")
+local Tittle = Instance.new("TextLabel")
+local Spawn = Instance.new("TextButton")
+local Store = Instance.new("TextButton")
+local Hoursetraining = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local FurnitureShop = Instance.new("TextButton")
+local Race = Instance.new("TextButton")
+local Libarya = Instance.new("TextButton")
+local farm = Instance.new("TextButton")
+local Breadinghourses = Instance.new("TextButton")
+local Jumptrain = Instance.new("TextButton")
+local drifttrain = Instance.new("TextButton")
+local buyhourse = Instance.new("TextButton")
+local wsclose = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGUI
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Main.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Main.Position = UDim2.new(0.150058612, 0, 0.0933940783, 0)
+Main.Size = UDim2.new(0, 638, 0, 363)
+
+Version.Name = "Version"
+Version.Parent = Main
+Version.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Version.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Version.Position = UDim2.new(0.52664578, 0, 0.00275482098, 0)
+Version.Size = UDim2.new(0, 218, 0, 52)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "V1.1"
+Version.TextColor3 = Color3.fromRGB(170, 0, 0)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
+
+Tittle.Name = "Tittle"
+Tittle.Parent = Main
+Tittle.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Tittle.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Tittle.Size = UDim2.new(0, 309, 0, 52)
+Tittle.Font = Enum.Font.SourceSans
+Tittle.Text = "Made by QWERTYT | HourseValley"
+Tittle.TextColor3 = Color3.fromRGB(170, 0, 0)
+Tittle.TextScaled = true
+Tittle.TextSize = 14.000
+Tittle.TextWrapped = true
+
+Spawn.Name = "Spawn"
+Spawn.Parent = Main
+Spawn.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Spawn.BorderColor3 = Color3.fromRGB(170, 0, 0)
+Spawn.Position = UDim2.new(0.015673982, 0, 0.176308542, 0)
+Spawn.Size = UDim2.new(0, 165, 0, 50)
+Spawn.Font = Enum.Font.SourceSans
+Spawn.Text = "Spawn"
+Spawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spawn.TextSize = 14.000
+spawn.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+  end)
+
+Store.Name = "Store"
+Store.Parent = Main
+Store.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Store.BorderColor3 = Color3.fromRGB(170, 0, 0)
+Store.Position = UDim2.new(0.358934194, 0, 0.176308542, 0)
+Store.Size = UDim2.new(0, 165, 0, 50)
+Store.Font = Enum.Font.SourceSans
+Store.Text = "Store"
+Store.TextColor3 = Color3.fromRGB(0, 0, 0)
+Store.TextSize = 14.000
+store.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-220, 3, 655)
+  end)
+
+Hoursetraining.Name = "Hourse training"
+Hoursetraining.Parent = Main
+Hoursetraining.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Hoursetraining.BorderColor3 = Color3.fromRGB(170, 0, 0)
+Hoursetraining.Position = UDim2.new(0.697492182, 0, 0.176308542, 0)
+Hoursetraining.Size = UDim2.new(0, 165, 0, 50)
+Hoursetraining.Font = Enum.Font.SourceSans
+Hoursetraining.Text = "Hourse training"
+Hoursetraining.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hoursetraining.TextSize = 14.000
+Hoursetraining.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+  end)
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextButton.Position = UDim2.new(0.699059606, 0, 0.39944905, 0)
+TextButton.Size = UDim2.new(0, 165, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "None"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+FurnitureShop.Name = "Furniture Shop"
+FurnitureShop.Parent = Main
+FurnitureShop.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+FurnitureShop.Position = UDim2.new(0.358934224, 0, 0.39944905, 0)
+FurnitureShop.Size = UDim2.new(0, 165, 0, 50)
+FurnitureShop.Font = Enum.Font.SourceSans
+FurnitureShop.Text = "Furniture Shop"
+FurnitureShop.TextColor3 = Color3.fromRGB(0, 0, 0)
+FurnitureShop.TextSize = 14.000
+FurnitureShop.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+  end)
+
+Race.Name = "Race"
+Race.Parent = Main
+Race.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Race.Position = UDim2.new(0.0141066266, 0, 0.39944905, 0)
+Race.Size = UDim2.new(0, 165, 0, 50)
+Race.Font = Enum.Font.SourceSans
+Race.Text = "Race"
+Race.TextColor3 = Color3.fromRGB(0, 0, 0)
+Race.TextSize = 14.000
+Race.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-146, 3, -761)
+  end)
+
+Libarya.Parent = Main
+Libarya.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Libarya.Position = UDim2.new(0.0141066266, 0, 0.622589588, 0)
+Libarya.Size = UDim2.new(0, 165, 0, 50)
+Libarya.Font = Enum.Font.SourceSans
+Libarya.Text = "Libary"
+Libarya.TextColor3 = Color3.fromRGB(0, 0, 0)
+Libarya.TextSize = 14.000
+Libarya.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(64, 7, 722)
+  end)
+
+farm.Parent = Main
+farm.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+farm.Position = UDim2.new(0.358934224, 0, 0.622589588, 0)
+farm.Size = UDim2.new(0, 165, 0, 50)
+farm.Font = Enum.Font.SourceSans
+farm.Text = "farm"
+farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+farm.TextSize = 14.000
+Farm.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-376, 3, 250)
+  end)
+
+Breadinghourses.Parent = Main
+Breadinghourses.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Breadinghourses.Position = UDim2.new(0.699059606, 0, 0.622589588, 0)
+Breadinghourses.Size = UDim2.new(0, 165, 0, 50)
+Breadinghourses.Font = Enum.Font.SourceSans
+Breadinghourses.Text = "Breading"
+Breadinghourses.TextColor3 = Color3.fromRGB(0, 0, 0)
+Breadinghourses.TextSize = 14.000
+Breadinghourses.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1057, 38, 817)
+  end)
+
+Jumptrain.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Jumptrain.Position = UDim2.new(0.0141066266, 0, 0.818181872, 0)
+Jumptrain.Size = UDim2.new(0, 165, 0, 50)
+Jumptrain.Font = Enum.Font.SourceSans
+Jumptrain.Text = "Jumptrain"
+Jumptrain.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jumptrain.TextSize = 14.000
+Jumptrain.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-171, 3, -342)
+  end)
+
+drifttrain.Parent = Main
+drifttrain.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+drifttrain.Position = UDim2.new(0.358934224, 0, 0.818181872, 0)
+drifttrain.Size = UDim2.new(0, 165, 0, 50)
+drifttrain.Font = Enum.Font.SourceSans
+drifttrain.Text = "drifttrain"
+drifttrain.TextColor3 = Color3.fromRGB(0, 0, 0)
+drifttrain.TextSize = 14.000
+drifttrain.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14, 3, -418)
+  end)
+
+buyhourse.Parent = Main
+buyhourse.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+buyhourse.BorderColor3 = Color3.fromRGB(170, 0, 0)
+buyhourse.Position = UDim2.new(0.697492242, 0, 0.818181872, 0)
+buyhourse.Size = UDim2.new(0, 165, 0, 50)
+buyhourse.Font = Enum.Font.SourceSans
+buyhourse.Text = "buyhourse"
+buyhourse.TextColor3 = Color3.fromRGB(0, 0, 0)
+buyhourse.TextSize = 14.000
+buyhourse.MouseButton1Click:Connect(function()
+  print("teleported")
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(202, 3, -94)
+  end)
+
+wsclose.Name = "wsclose"
+wsclose.Parent = Main
+wsclose.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+wsclose.Position = UDim2.new(0.838558018, 0, 6.30528447e-08, 0)
+wsclose.Size = UDim2.new(0, 103, 0, 50)
+wsclose.Font = Enum.Font.SourceSans
+wsclose.Text = "X"
+wsclose.TextColor3 = Color3.fromRGB(0, 0, 0)
+wsclose.TextScaled = true
+wsclose.TextSize = 14.000
+wsclose.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.891666651, 0, 0, 0)
+Close.Size = UDim2.new(0, 39, 0, 39)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextStrokeTransparency = 0.500
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+Main.Visible = false
+Open.Visible = true
+end)
+ 
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0.566150188, 0)
+Open.Size = UDim2.new(0, 92, 0, 22)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextStrokeTransparency = 0.500
+Open.TextWrapped = true
+Open.MouseButton1Click:Connect(function()
+Main.Visible = true
+Open.Visible = false
+end)
+ 
+-- Scripts:
+ 
+local function NLNLEP_fake_script() -- ScreenGui.Script
+local script = Instance.new('Script', ScreenGui)
+ 
+frame = script.Parent.Main -- Take out {}s, and put name of frame
+frame.Draggable = true
+frame.Active = true
+frame.Selectable = true
+end
+coroutine.wrap(NLNLEP_fake_script)()
