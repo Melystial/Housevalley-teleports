@@ -1,3 +1,4 @@
+if game.PlaceId == 2830250344 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("HourseValley | made by QWERTYT", "Sentinel")
 
@@ -14,7 +15,7 @@ local PlayerSection = Player:NewSection("Player")
 PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
-PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(j)
+PlayerSection:NewSlider("Bugged", "Changes the jumppower", 250, 50, function(j)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
 end)
   PlayerSection:NewButton("Inf Jumps", "Enables Inf Jumps", function()
@@ -25,6 +26,8 @@ end)
     end
     end)
   end)
+  PlayerSection:NewButton("PlacesTP + fly", "Tps you to places")
+
 -- Gui to Lua
 -- Version: 3.2
 
@@ -42,7 +45,7 @@ local Farm = Instance.new("TextButton")
 local Libary = Instance.new("TextButton")
 local BuyHourse = Instance.new("TextButton")
 local Spawn = Instance.new("TextButton")
-local comingsoon = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
 local wsframe = Instance.new("Frame")
 local wsclose = Instance.new("TextButton")
 local close = Instance.new("TextButton")
@@ -207,19 +210,21 @@ Spawn.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14, 3, -24)
 end)
 
-comingsoon.Name = "comingsoon"
-comingsoon.Parent = Main
-comingsoon.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-comingsoon.Position = UDim2.new(0.522222221, 0, 0.859891713, 0)
-comingsoon.Size = UDim2.new(0, 153, 0, 55)
-comingsoon.Font = Enum.Font.SourceSans
-comingsoon.Text = "ComingSoon"
-comingsoon.TextColor3 = Color3.fromRGB(200, 0, 0)
-comingsoon.TextScaled = true
-comingsoon.TextSize = 14.000
-comingsoon.TextWrapped = true
-comingsoon.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(202, 3, -94)
+Fly.Name = "Fly"
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.522222221, 0, 0.859891713, 0)
+Fly.Size = UDim2.new(0, 153, 0, 55)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextStrokeTransparency = 0.000
+Fly.TextWrapped = true
+Fly.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9tZMx4SW"))()
 end)
 
 wsframe.Name = "wsframe"
@@ -454,10 +459,10 @@ end
 end
 
 Options('Enabled', 'ESP Enabled', true);
-Options('ShowTeam', 'Show Team', false);
+Options('ShowTeam', 'Show Team', true);
 Options('ShowName', 'Show Names', true);
 Options('ShowDistance', 'Show Distance', true);
-Options('ShowHealth', 'Show Health', true);
+Options('ShowHealth', 'Show Health', false);
 Options('ShowBoxes', 'Show Boxes', true);
 Options('ShowTracers', 'Show Tracers', true);
 Options('ShowDot', 'Show Head Dot', false);
@@ -1264,3 +1269,4 @@ local settingsection = settings:NewSection("settings")
 settingsection:NewKeybind("ToggleGUI", "HideGUI", Enum.KeyCode.F, function()
 Library:ToggleUI()
 end)
+end
